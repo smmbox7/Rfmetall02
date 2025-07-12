@@ -120,7 +120,7 @@ const Features: React.FC = () => {
             </div>
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bold text-yellow-300 mb-2">15%</div>
-              <div className="text-blue-100 text-lg">экономия от рынка</div>
+              <div className="text-blue-100 text-lg">экономия до 50%</div>
             </div>
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bold text-purple-300 mb-2">7-10</div>

@@ -152,14 +152,14 @@ User Agent: ${leadData.userAgent || navigator.userAgent}
         comments += `\nСтоимость: ${Math.round(leadData.productData.totalPrice || 0).toLocaleString()} ₸`;
         comments += `\nФилиал: ${leadData.productData.item.branch}`;
         comments += `\nГОСТ: ${leadData.productData.item.gost}`;
-      }
-    }
-
-    // UTM метки
-    if (Object.values(utmParams).some(value => value)) {
-      comments += `\n\nUTM метки:`;
-      Object.entries(utmParams).forEach(([key, value]) => {
-        if (value) comments += `\n${key}: ${value}`;
+        body: new URLSearchParams([
+          ['filter[PHONE]', formattedPhone],
+          ['filter[>DATE_CREATE]', new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString()],
+          ['select[]', 'ID'],
+          ['select[]', 'TITLE'],
+          ['select[]', 'NAME'],
+          ['select[]', 'COMMENTS']
+        ])
       });
     }
 

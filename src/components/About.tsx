@@ -17,7 +17,7 @@ const About: React.FC = () => {
           
           <h2 className="text-4xl lg:text-6xl font-bold mb-8">
             <span className="bg-gradient-to-r from-gray-900 via-blue-800 to-gray-900 bg-clip-text text-transparent">
-              АТЛАНТ Снаб Сити
+              АТЛАНТ МЕТАЛЛ
             </span>
             <br />
             <span className="bg-gradient-to-r from-orange-500 via-red-500 to-orange-500 bg-clip-text text-transparent">
@@ -26,8 +26,8 @@ const About: React.FC = () => {
           </h2>
           
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Более 5 лет мы специализируемся на поставках качественного металлопроката из России в Казахстан. 
-            Наша миссия — обеспечить строительную отрасль Казахстана надежными материалами по выгодным ценам.
+            ТОО "АТЛАНТ МЕТАЛЛ" более 5 лет специализируется на поставках качественного металлопроката из России в Казахстан. 
+            Наша миссия — обеспечить строительную отрасль Казахстана надежными материалами с экономией до 50%.
           </p>
         </div>
 
@@ -102,7 +102,7 @@ const About: React.FC = () => {
             
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center p-6 bg-white rounded-2xl shadow-lg">
-                <div className="text-4xl font-bold text-blue-600 mb-2">800+</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">4824+</div>
                 <div className="text-gray-600">позиций металлопроката</div>
               </div>
               

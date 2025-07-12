@@ -204,15 +204,6 @@ const ProductsSection: React.FC = () => {
                     <span className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-2 py-1 rounded text-xs">Доставлено</span>
                   </div>
                 </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-    </section>
-  );
-};
 
                 <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-sm border border-purple-500/30 p-6 rounded-2xl">
                   <div className="flex justify-between items-center mb-2">
@@ -223,4 +214,14 @@ const ProductsSection: React.FC = () => {
                     <span className="mr-4">📍 Оренбург</span>
                     <span className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-2 py-1 rounded text-xs">Доставлено</span>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+};
+
 export default ProductsSection;

@@ -84,14 +84,14 @@ const findExistingLead = async (phone: string): Promise<any> => {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: new URLSearchParams({
-        'filter[PHONE]': formattedPhone,
-        'filter[>DATE_CREATE]': new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString(), // За последние 24 часа
-        'select[]': 'ID',
-        'select[]': 'TITLE',
-        'select[]': 'NAME',
-        'select[]': 'COMMENTS'
-      })
+      body: new URLSearchParams([
+        ['filter[PHONE]', formattedPhone],
+        ['filter[>DATE_CREATE]', new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString()],
+        ['select[]', 'ID'],
+        ['select[]', 'TITLE'],
+        ['select[]', 'NAME'],
+        ['select[]', 'COMMENTS']
+      ])
     });
 
     const result = await response.json();
@@ -152,15 +152,7 @@ User Agent: ${leadData.userAgent || navigator.userAgent}
         comments += `\nСтоимость: ${Math.round(leadData.productData.totalPrice || 0).toLocaleString()} ₸`;
         comments += `\nФилиал: ${leadData.productData.item.branch}`;
         comments += `\nГОСТ: ${leadData.productData.item.gost}`;
-        body: new URLSearchParams([
-          ['filter[PHONE]', formattedPhone],
-          ['filter[>DATE_CREATE]', new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString()],
-          ['select[]', 'ID'],
-          ['select[]', 'TITLE'],
-          ['select[]', 'NAME'],
-          ['select[]', 'COMMENTS']
-        ])
-      });
+      }
     }
 
     const apiUrl = `${getApiUrl()}/crm.lead.add`;

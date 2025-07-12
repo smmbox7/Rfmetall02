@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
                 <Phone className="h-5 w-5 text-orange-400 flex-shrink-0" />
                 <div>
                   <a href="tel:+77777777777" className="text-white hover:text-orange-400 transition-colors font-semibold">
-                    +7 (777) 777-77-77
+                    +7 (747) 219-93-69
                   </a>
                   <p className="text-gray-400 text-sm">Звоните с 9:00 до 18:00</p>
                 </div>
@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
                 <Mail className="h-5 w-5 text-orange-400 flex-shrink-0" />
                 <div>
                   <a href="mailto:info@atlantsnabcity.kz" className="text-white hover:text-orange-400 transition-colors">
-                    info@atlantsnabcity.kz
+                    info@atlantmetal.kz
                   </a>
                   <p className="text-gray-400 text-sm">Коммерческие вопросы</p>
                 </div>
@@ -121,7 +121,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 ТОО "АТЛАНТ Снаб Сити". Все права защищены.
+              © 2024 ТОО "АТЛАНТ МЕТАЛЛ". Все права защищены.
             </div>
             
             <div className="flex flex-wrap gap-6 text-sm">
@@ -147,8 +147,8 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="mt-6 text-center">
-            <button
-              onClick={() => openModal('Заказать звонок')}
+            ТОО "АТЛАНТ МЕТАЛЛ" - надежный поставщик качественного металлопроката из России в Казахстан. 
+            Более 5 лет успешной работы, 4824+ позиций в наличии, доставка по всему Казахстану за 5-10 дней. Экономия до 50%.
               className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white px-8 py-3 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg"
             >
               📞 Заказать звонок прямо сейчас

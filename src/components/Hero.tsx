@@ -91,6 +91,32 @@ const Hero: React.FC = () => {
               </div>
             </div>
           </div>
+
+          {/* CTA Section */}
+          <div className="mt-16 text-center">
+            <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 backdrop-blur-sm border border-orange-500/30 rounded-3xl p-8 max-w-4xl mx-auto">
+              <h3 className="text-3xl font-bold mb-4">
+                🚀 Нужен расчет стоимости?
+              </h3>
+              <p className="text-xl text-blue-100 mb-8">
+                Получите точную стоимость металлопроката с доставкой за 30 секунд
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="#calculator"
+                  className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg"
+                >
+                  🧮 Рассчитать стоимость
+                </a>
+                <button
+                  onClick={() => openModal('Заказать звонок')}
+                  className="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all"
+                >
+                  📞 Заказать звонок
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -140,18 +140,27 @@ const ProductsSection: React.FC = () => {
               
               <div className="space-y-6">
                 <h4 className="text-2xl font-bold mb-6">Популярные размеры:</h4>
-                <div className="grid grid-cols-2 gap-4">
-                  {['32×3', '38×4', '57×3', '76×4', '89×4', '108×4', '133×4', '159×4'].map((size, index) => (
-                    <div key={size} className={`backdrop-blur-sm border p-4 rounded-xl text-center ${
-                      index % 4 === 0 ? 'bg-gradient-to-r from-red-500/20 to-pink-500/20 border-red-500/30' :
-                      index % 4 === 1 ? 'bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border-blue-500/30' :
-                      index % 4 === 2 ? 'bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border-purple-500/30' :
-                      'bg-gradient-to-r from-orange-500/20 to-yellow-500/20 border-orange-500/30'
-                    }`}>
-                      <div className="font-bold text-lg">{size}</div>
-                      <div className="text-green-200 text-sm">В наличии</div>
-                    </div>
-                  ))}
+                
+                <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 backdrop-blur-sm border border-green-500/30 p-6 rounded-2xl">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="font-bold text-lg">Труба 108×6 бесшовная — 24 тонны</span>
+                    <span className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-3 py-1 rounded-full text-sm font-bold">3.2 млн ₸</span>
+                  </div>
+                  <div className="flex items-center text-green-200">
+                    <span className="mr-4">📍 Челябинск</span>
+                    <span className="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-2 py-1 rounded text-xs">Доставлено</span>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 backdrop-blur-sm border border-blue-500/30 p-6 rounded-2xl">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="font-bold text-lg">Труба 89×4 электросварная — 18 тонн</span>
+                    <span className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-3 py-1 rounded-full text-sm font-bold">1.8 млн ₸</span>
+                  </div>
+                  <div className="flex items-center text-green-200">
+                    <span className="mr-4">📍 Новосибирск</span>
+                    <span className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-2 py-1 rounded text-xs">Доставлено</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -184,18 +193,17 @@ const ProductsSection: React.FC = () => {
               
               <div className="space-y-6">
                 <h4 className="text-2xl font-bold mb-6">Популярные размеры:</h4>
-                <div className="grid grid-cols-2 gap-4">
-                  {['20×20×2', '25×25×2', '30×30×3', '40×40×3', '50×50×4', '60×60×4', '80×80×5', '100×100×6'].map((size, index) => (
-                    <div key={size} className={`backdrop-blur-sm border p-4 rounded-xl text-center ${
-                      index % 4 === 0 ? 'bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border-yellow-500/30' :
-                      index % 4 === 1 ? 'bg-gradient-to-r from-green-500/20 to-emerald-500/20 border-green-500/30' :
-                      index % 4 === 2 ? 'bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border-blue-500/30' :
-                      'bg-gradient-to-r from-purple-500/20 to-pink-500/20 border-purple-500/30'
-                    }`}>
-                      <div className="font-bold text-lg">{size}</div>
-                      <div className="text-orange-200 text-sm">В наличии</div>
-                    </div>
-                  ))}
+                
+                <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 backdrop-blur-sm border border-orange-500/30 p-6 rounded-2xl">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="font-bold text-lg">Профиль 100×100×6 — 15 тонн</span>
+                    <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">2.1 млн ₸</span>
+                  </div>
+                  <div className="flex items-center text-orange-200">
+                    <span className="mr-4">📍 Екатеринбург</span>
+                    <span className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-2 py-1 rounded text-xs">Доставлено</span>
+                  </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -206,4 +214,13 @@ const ProductsSection: React.FC = () => {
   );
 };
 
+                <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-sm border border-purple-500/30 p-6 rounded-2xl">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="font-bold text-lg">Профиль 60×60×4 — 22 тонны</span>
+                    <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">1.9 млн ₸</span>
+                  </div>
+                  <div className="flex items-center text-orange-200">
+                    <span className="mr-4">📍 Оренбург</span>
+                    <span className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-2 py-1 rounded text-xs">Доставлено</span>
+                  </div>
 export default ProductsSection;
